@@ -64,8 +64,6 @@ void quicksort(int array[], int low, int high){
         return;
     }else{
         int pivot = partition(array, low, high);
-        int i = low - 1;
-        
         quicksort(array, low, pivot - 1);
         quicksort(array, pivot + 1, high);
     }
@@ -138,7 +136,7 @@ void presentar(int array[], int n) {
 
 int main()
 {
-    int n =1100000;
+    int n =11;
     int* arreglo = new int[n];  
 
     srand(time(0)); 
